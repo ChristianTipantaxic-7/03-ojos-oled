@@ -1,0 +1,20 @@
+{
+  "name": "03-ojos-oled",
+  "version": "1.0.0",
+  "description": "Semana 03: Expresiones Oculares en Pantalla OLED SSD1306 con FSM y Modo Debug Serial — Soporte Técnico (3° BGU) UETS",
+  "scripts": {
+    "test": "node scripts/evaluar.js",
+    "check": "node scripts/evaluar.js"
+  },
+  "keywords": [
+    "esp32",
+    "oled",
+    "ssd1306",
+    "bitmaps",
+    "fsm",
+    "uets",
+    "soporte-tecnico"
+  ],
+  "author": "Ing. Milton Velásquez <UETS>",
+  "license": "MIT"
+}
