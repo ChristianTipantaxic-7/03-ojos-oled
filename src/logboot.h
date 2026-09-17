@@ -46,6 +46,7 @@
  */
 inline bool initDiagnostics(Adafruit_SSD1306 &display) {
   Wire.begin(SDA_PIN, SCL_PIN);
+  Wire.setClock(400000); // Modo I2C Rápido (400 kHz): refresco a >40 FPS sin parpadeos
   if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println(F("[ERROR FATAL] No se pudo inicializar la pantalla OLED en 0x3C"));
     return false;
