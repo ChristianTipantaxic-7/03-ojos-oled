@@ -3,11 +3,11 @@
  * EYES.H — CATÁLOGO DE EXPRESIONES OCULARES OLED (128x64)
  * Soporte Técnico (3° BGU Técnico) — Unidad Educativa Técnico Salesiano
  * ============================================================================
- * Wrapper modular de la librería Irisoled (MIT License) para ESP32 y SSD1306.
+ * Wrapper modular de la librería oficial Irisoled para ESP32 y SSD1306.
  * 
- * En lugar de incrustar más de 1000 líneas de código hexadecimal en bruto,
- * este archivo utiliza la librería Irisoled alojada en lib/Irisoled/, la cual
- * almacena 32 expresiones y animaciones en memoria Flash (PROGMEM).
+ * En lugar de copiar cientos de líneas de bitmaps en bruto dentro del proyecto,
+ * la librería se descarga e integra automáticamente vía 'platformio.ini' (lib_deps),
+ * almacenando 32 expresiones optimizadas en memoria Flash (PROGMEM).
  * ============================================================================
  */
 
@@ -18,6 +18,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <Irisoled.h>
+#include <IrisoledAnimation.h>
 
 // Dimensiones estándar del display OLED
 #ifndef SCREEN_WIDTH
