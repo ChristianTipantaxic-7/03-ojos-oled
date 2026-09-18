@@ -1,9 +1,12 @@
 # Semana 03: Expresiones Oculares OLED (128x64) & Modo Debug Serial
 
+[![Guía Maestra Web](https://img.shields.io/badge/Gu%C3%ADa%20Maestra%20Web-Cloudflare%20Edge-orange?style=for-the-badge&logo=cloudflare)](https://uets-st-portal.vgmiltonisaac.workers.dev/03-ojos-oled/)
+
 > **Módulo:** Soporte Técnico (Sistemas Digitales e IoT) — 3° Bachillerato Técnico  
 > **Institución:** Unidad Educativa Técnico Salesiano (UETS)  
 > **Docentes:** Ing. Milton Velásquez / Ing. Christian Japón  
-> **Ponderación Dual MIT:** 5.0 pts Código/Wokwi + 5.0 pts Screencast (4 min)
+> **Ponderación Dual MIT:** 5.0 pts Código/Wokwi + 5.0 pts Screencast (4 min)  
+> **Guía Interactiva:** https://uets-st-portal.vgmiltonisaac.workers.dev/03-ojos-oled/
 
 ---
 
