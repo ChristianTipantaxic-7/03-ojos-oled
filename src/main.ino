@@ -16,6 +16,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+#include "logo.h"
 #include "logboot.h"
 #include "eyes.h"
 
@@ -201,6 +202,9 @@ void setup() {
     Serial.println(F("[FALLO CRÍTICO] Error al inicializar pantalla OLED."));
     while (true) delay(100);
   }
+
+  drawLogo(display);
+  delay(2000);
 
   // CHECK 1.1: Invoca la función obligatoria de auto-diagnóstico (Power-On Self-Test):
   runSystemPOST(display);
