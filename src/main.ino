@@ -189,7 +189,7 @@ void ejecutarSecuenciaAutonoma() {
 
 // 
 
-// ============================================================================
+============================================================================
 // RETO 01: SETUP (Inicialización, POST y mirada base)
 // ============================================================================
 void setup() {
@@ -202,8 +202,8 @@ void setup() {
     while (true) delay(100);
   }
 
-  // TODO 1.1: Invoca la función obligatoria de auto-diagnóstico (Power-On Self-Test):
-  // runSystemPOST(display);
+  // CHECK 1.1: Invoca la función obligatoria de auto-diagnóstico (Power-On Self-Test):
+  runSystemPOST(display);
 
   // Menú de ayuda por Serial Monitor
   Serial.println(F("\n======================================================="));
@@ -221,8 +221,8 @@ void setup() {
   Serial.println(F("  '0' o 'M' -> Alternar Modo Autónomo (FSM millis)"));
   Serial.println(F("=======================================================\n"));
 
-  // TODO 1.2: Dibuja la expresión neutra base para arrancar (eye_normal):
-  // drawEyeExpression(display, eye_normal);
+  // CHECK 1.2: Dibuja la expresión neutra base para arrancar (eye_normal):
+  drawEyeExpression(display, eye_normal);
 
   previousMillis = millis();
 }
