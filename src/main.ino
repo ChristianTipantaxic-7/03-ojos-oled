@@ -4,8 +4,8 @@
  * Soporte Técnico (3° BGU Técnico) — Unidad Educativa Técnico Salesiano
  * ============================================================================
  * Instrucciones:
- * 1. Completa cada uno de los bloques marcados con '// TODO:'
- * 2. Compila con PlatformIO (botón Build ✔)
+ * 1. Completa cada uno de los bloques marcados con '// CHECK:'
+ * 2. Compila con PlatformIO (botón Build ✔️)
  * 3. Simula en Wokwi Simulator abriendo diagram.json
  * 4. Valida tu entrega ejecutando en terminal: pnpm test
  * ============================================================================
@@ -65,19 +65,19 @@ void debugEyesSerial() {
       case '2':
       case 'H':
       case 'h':
-        // TODO 4.2: Conmuta el estado a STATE_HAPPY y renderiza eye_happy con drawEyeExpression():
-        // currentState = ...;
-        // drawEyeExpression(display, ...);
-        // Serial.println(F("[SERIAL DEBUG] Expresión cambiada a: FELIZ"));
+        // CHECK 4.2: Conmuta el estado a STATE_HAPPY y renderiza eye_happy con drawEyeExpression():
+        currentState = STATE_HAPPY;
+        drawEyeExpression(display, eye_happy);
+        Serial.println(F("[SERIAL DEBUG] Expresión cambiada a: FELIZ"));
         break;
 
       case '3':
       case 'A':
       case 'a':
-        // TODO 4.3: Conmuta el estado a STATE_ALERT y renderiza eye_alert con drawEyeExpression():
-        // currentState = ...;
-        // drawEyeExpression(display, ...);
-        // Serial.println(F("[SERIAL DEBUG] Expresión cambiada a: ALERTA"));
+        // CHECK 4.3: Conmuta el estado a STATE_ALERT y renderiza eye_alert con drawEyeExpression():
+        currentState = STATE_ALERT;
+        drawEyeExpression(display, eye_alert);
+        Serial.println(F("[SERIAL DEBUG] Expresión cambiada a: ALERTA"));
         break;
 
       case '4':
@@ -99,9 +99,10 @@ void debugEyesSerial() {
       case '6':
       case 'L':
       case 'l':
-        // TODO 4.4: Conmuta el estado a STATE_LOOK_LEFT y renderiza eye_look_left:
-        // currentState = ...;
-        // drawEyeExpression(display, ...);
+        // CHECK 4.4: Conmuta el estado a STATE_LOOK_LEFT y renderiza eye_look_left:
+        currentState = STATE_LOOK_LEFT;
+        drawEyeExpression(display, eye_look_left);
+        Serial.println(F("[SERIAL DEBUG] Expresión cambiada a: MIRADA IZQUIERDA"));
         break;
 
       case '7':
@@ -135,6 +136,8 @@ void debugEyesSerial() {
     }
   }
 }
+
+// 
 
 // ============================================================================
 // RETOS 02 Y 03: MÁQUINA DE ESTADOS FINITOS (FSM) NO BLOQUEANTE
